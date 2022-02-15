@@ -1,0 +1,36 @@
+.header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  &__container {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 300px 2fr 1fr 30px;
+    @include align-items(center);
+  }
+
+  .search-form {
+    input {
+      padding: 10px 15px;
+      border: 1px solid #eaeaea;
+      background-color: #ffffff;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr auto;
+
+      .btn-submit {
+        color: #ffffff;
+        padding: 0 16px;
+        border: none;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: #fea19f;
+        @include transition();
+      }
+    }
+  }
+}
